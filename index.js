@@ -10,3 +10,8 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+app.get("/api/users", (req, res) => {
+  res.json([
+    { id: 1, name: "Quyen" }
+  ]);
+});
